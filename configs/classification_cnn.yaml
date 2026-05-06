@@ -1,0 +1,3 @@
+project:
+  name: classification-cnn-study
+  output_dir: outputs/classification-cnn

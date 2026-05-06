@@ -1,0 +1,2 @@
+class TensorRTAdapter:
+    name = "tensorrt"

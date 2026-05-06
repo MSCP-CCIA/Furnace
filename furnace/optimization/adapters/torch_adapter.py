@@ -1,0 +1,2 @@
+class TorchAdapter:
+    name = "torch"

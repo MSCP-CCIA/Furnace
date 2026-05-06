@@ -1,0 +1,54 @@
+project:
+  name: default-study
+  output_dir: outputs/default-study
+  seed: 42
+
+model:
+  source: toy
+  name: toy_mlp
+  task: classification
+  input_dim: 8
+  hidden_dim: 16
+  num_classes: 2
+
+data:
+  dataset_name: synthetic_classification
+  batch_size: 16
+  num_samples: 256
+  calibration_samples: 64
+
+optimization:
+  candidates:
+    - name: baseline
+      method: baseline
+    - name: dynamic_int8
+      method: dynamic_quantization
+
+evaluation:
+  metrics:
+    - accuracy
+    - f1
+    - latency
+    - memory
+    - model_size
+
+constraints:
+  max_quality_loss: 0.05
+  max_latency_ms: 1000
+  max_memory_mb: 4096
+  max_model_size_mb: 512
+
+decision:
+  weights:
+    accuracy: 0.4
+    f1: 0.2
+    latency: 0.2
+    memory: 0.1
+    model_size: 0.1
+
+reporting:
+  formats:
+    - markdown
+
+tracking:
+  backend: local

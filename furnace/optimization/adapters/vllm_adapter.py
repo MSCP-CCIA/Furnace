@@ -1,0 +1,2 @@
+class VllmAdapter:
+    name = "vllm"

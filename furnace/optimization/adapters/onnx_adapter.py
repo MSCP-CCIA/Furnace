@@ -1,0 +1,2 @@
+class OnnxAdapter:
+    name = "onnx"

@@ -1,0 +1,4 @@
+services:
+  furnace:
+    build: .
+    command: ["run", "--config", "configs/default.yaml"]

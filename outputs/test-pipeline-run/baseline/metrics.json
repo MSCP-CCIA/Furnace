@@ -1,0 +1,28 @@
+{
+  "candidate_name": "baseline",
+  "optimization_method": "baseline",
+  "configuration": {
+    "name": "baseline",
+    "method": "baseline",
+    "backend": null,
+    "enabled": true,
+    "dtype": null,
+    "mode": null,
+    "amount": null
+  },
+  "metrics": {
+    "accuracy": 0.67578125,
+    "f1": 0.6681939131719301,
+    "latency": 0.041787501686485484,
+    "memory": 0.00067901611328125,
+    "model_size": 0.0028963088989257812,
+    "quality_loss": 0.0
+  },
+  "artifacts": {},
+  "runtime_metadata": {
+    "device": "cpu"
+  },
+  "recommendation_status": null,
+  "score": null,
+  "violations": []
+}

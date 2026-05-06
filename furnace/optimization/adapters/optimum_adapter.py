@@ -1,0 +1,2 @@
+class OptimumAdapter:
+    name = "optimum"

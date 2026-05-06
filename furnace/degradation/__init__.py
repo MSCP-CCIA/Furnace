@@ -1,0 +1,1 @@
+"""Degradation analysis namespace scaffold."""
